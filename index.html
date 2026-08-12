@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflexão do Projeto | Descobertas do Grupo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎯 Reflexão Final do Projeto</h1>
+        <p>A jornada de aprendizado e as grandes viradas de chave do nosso grupo.</p>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Nossa Jornada</h2>
+            <p>Depois de apresentar o projeto e organizar os materiais finais, olhamos para trás para entender como novas ideias e percepções moldaram nosso trabalho.</p>
+        </section>
+
+        <section class="cards-grid">
+            <article class="card">
+                <span class="badge">Descoberta 01</span>
+                <h3>💡 O Novo Olhar Sobre o Problema</h3>
+                <p class="description">
+                    Aprendemos que o problema investigado era mais profundo do que imaginávamos inicialmente. Ao pesquisar a fundo e ouvir as pessoas afetadas, percebemos que a causa principal não era a falta de informação, mas sim a falta de acesso simplificado a ela.
+                </p>
+                <button class="btn-reflect" onclick="toggleDetails('desc1')">Ver Impacto no Projeto</button>
+                <div id="desc1" class="details hidden">
+                    <p><strong>Resultado:</strong> Isso nos fez redirecionar o foco da pesquisa para criar algo prático e direto, em vez de apenas um material informativo genérico.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <span class="badge">Descoberta 02</span>
+                <h3>🔄 A Evolução da Solução</h3>
+                <p class="description">
+                    Durante a etapa de testes do protótipo, percebemos que a primeira ideia era muito complexa. O momento em que simplificamos o design foi decisivo para tornar a solução realmente funcional e acessível para todos.
+                </p>
+                <button class="btn-reflect" onclick="toggleDetails('desc2')">Ver Impacto no Projeto</button>
+                <div id="desc2" class="details hidden">
+                    <p><strong>Resultado:</strong> Reduzimos as etapas de uso pela metade, garantindo uma experiência muito mais agradável e eficiente.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="interactive-section">
+            <h2>➕ Adicionar Novo Insight do Grupo</h2>
+            <div class="input-group">
+                <input type="text" id="noteInput" placeholder="Escreva uma nova percepção ou aprendizado...">
+                <button id="addBtn">Registrar</button>
+            </div>
+            <ul id="notesList" class="notes-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido em grupo • Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
